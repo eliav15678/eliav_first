@@ -56,4 +56,7 @@ let users=[
         ]
     }
  ];
- console.log(`name = ${users[3].kids[1].namek}\nage = ${users[3].kids[1].age}`)
+ users.forEach(x => {
+    let xx=0;
+    console.log(`${x.name} - kids :\n name = ${x.kids[xx].namek} age = ${x.kids[xx].age}  name = ${x.kids[xx+1].namek} age = ${x.kids[xx+1].age}`);// אפשר עוד foreach בתוך ה foreach (מקוננת)
+ });
